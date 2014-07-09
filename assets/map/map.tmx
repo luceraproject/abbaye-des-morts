@@ -1,0 +1,1844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="160" height="112" tilewidth="8" tileheight="8">
+ <tileset firstgid="1" name="tiles" tilewidth="8" tileheight="8">
+  <image source="../graphics/tiles.png" width="1000" height="120"/>
+ </tileset>
+ <layer name="map" width="160" height="112">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <objectgroup name="room00" width="160" height="112">
+  <object name="movable" x="-72" y="136" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="36"/>
+    <property name="min" value="0"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="movable" x="-96" y="136" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="36"/>
+    <property name="min" value="0"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="movable" x="-48" y="136" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="36"/>
+    <property name="min" value="0"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room01" width="160" height="112">
+  <object name="door" x="488" y="24" width="8" height="40">
+   <properties>
+    <property name="type" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room02" width="160" height="112">
+  <object name="step" x="528" y="168" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="576" y="88" width="8" height="8"/>
+  <object name="step" x="584" y="104" width="8" height="8"/>
+  <object name="step" x="592" y="120" width="8" height="8"/>
+  <object name="step" x="600" y="136" width="8" height="8"/>
+  <object name="actionitem" x="608" y="56" width="16" height="16">
+   <properties>
+    <property name="type" value="heart"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="552" y="8" width="16" height="16">
+   <properties>
+    <property name="type" value="bell"/>
+   </properties>
+  </object>
+  <object name="movable" x="728" y="144" width="16" height="16">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="91"/>
+    <property name="min" value="72"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="rat"/>
+   </properties>
+  </object>
+  <object name="movable" x="576" y="144" width="16" height="16">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="91"/>
+    <property name="min" value="72"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="rat"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room03" width="160" height="112">
+  <object name="movable" x="800" y="120" width="16" height="16">
+   <properties>
+    <property name="color" value="0"/>
+    <property name="dir" value="2"/>
+    <property name="max" value="16"/>
+    <property name="min" value="11"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="spider"/>
+   </properties>
+  </object>
+  <object name="movable" x="832" y="136" width="16" height="16">
+   <properties>
+    <property name="color" value="1"/>
+    <property name="dir" value="3"/>
+    <property name="max" value="18"/>
+    <property name="min" value="13"/>
+    <property name="speed" value="1.25"/>
+    <property name="type" value="spider"/>
+   </properties>
+  </object>
+  <object name="movable" x="848" y="104" width="16" height="16">
+   <properties>
+    <property name="color" value="0"/>
+    <property name="dir" value="2"/>
+    <property name="max" value="15"/>
+    <property name="min" value="11"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="spider"/>
+   </properties>
+  </object>
+  <object name="movable" x="960" y="120" width="16" height="16">
+   <properties>
+    <property name="color" value="1"/>
+    <property name="dir" value="2"/>
+    <property name="max" value="18"/>
+    <property name="min" value="15"/>
+    <property name="speed" value="1.25"/>
+    <property name="type" value="spider"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="992" y="144" width="16" height="16">
+   <properties>
+    <property name="mode" value="1"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="912" y="128" width="16" height="16">
+   <properties>
+    <property name="mode" value="0"/>
+    <property name="type" value="scroll"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room04" width="160" height="112">
+  <object name="static" x="1144" y="136" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="1160" y="136" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="1152" y="136" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="1168" y="136" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="1136" y="136" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="1128" y="136" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="1176" y="136" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="movable" x="1072" y="136" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="speed" value="0"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="movable" x="1096" y="136" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="speed" value="0"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="movable" x="1224" y="136" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="speed" value="0"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="movable" x="1200" y="136" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="speed" value="0"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room10" width="160" height="112">
+  <object name="movable" x="-104" y="312" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="36"/>
+    <property name="min" value="0"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="movable" x="-80" y="312" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="36"/>
+    <property name="min" value="0"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="movable" x="-56" y="312" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="36"/>
+    <property name="min" value="0"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="path" x="0" y="336">
+   <polyline points="0,0 152,0 160,-16 168,-8 176,-24 184,-16 216,-16 224,0 256,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="room11" width="160" height="112">
+  <object name="movable" x="176" y="312" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="64"/>
+    <property name="min" value="0"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="movable" x="152" y="312" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="64"/>
+    <property name="min" value="0"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="movable" x="200" y="312" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="64"/>
+    <property name="min" value="0"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="templar"/>
+   </properties>
+  </object>
+  <object name="static" x="336" y="344" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="344" y="344" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="384" y="344" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="392" y="344" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="416" y="344" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="424" y="344" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="path" x="256" y="336">
+   <polyline points="0,0 80,0 88,-8 96,0 128,0 136,-8 144,0 160,0 168,-8 176,0 208,0 224,-24 232,-16 272,-16"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="room12" width="160" height="112">
+  <object name="step" x="528" y="192" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="528" y="248" width="8" height="88">
+   <properties>
+    <property name="flag" value="ENTER"/>
+    <property name="flagValue" value="true"/>
+    <property name="repeat" value="0"/>
+    <property name="type" value="trigger"/>
+   </properties>
+  </object>
+  <object name="door" x="512" y="288" width="8" height="32">
+   <properties>
+    <property name="animated" value="1"/>
+    <property name="close" value="1"/>
+    <property name="flag" value="ENTER"/>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room13" width="160" height="112">
+  <object name="movable" x="912" y="224" width="16" height="16">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="115"/>
+    <property name="min" value="100"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="bat"/>
+   </properties>
+  </object>
+  <object name="movable" x="856" y="264" width="16" height="16">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="124"/>
+    <property name="min" value="106"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="bat"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="824" y="312" width="16" height="24">
+   <properties>
+    <property name="type" value="checkpoint"/>
+   </properties>
+  </object>
+  <object name="door" x="976" y="336" width="16" height="16">
+   <properties>
+    <property name="flag" value="BELL"/>
+    <property name="type" value="2"/>
+   </properties>
+  </object>
+  <object name="door" x="1016" y="288" width="8" height="32">
+   <properties>
+    <property name="flag" value="TOGGLE00"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object name="step" x="976" y="336" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="4"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="984" y="320" width="16" height="16">
+   <properties>
+    <property name="mode" value="1"/>
+    <property name="type" value="scroll"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room14" width="160" height="112">
+  <object name="movable" x="1184" y="224" width="16" height="8">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="150"/>
+    <property name="min" value="146"/>
+    <property name="speed" value="0.5"/>
+    <property name="type" value="worm"/>
+   </properties>
+  </object>
+  <object name="movable" x="1160" y="328" width="16" height="8">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="146"/>
+    <property name="min" value="139"/>
+    <property name="speed" value="0.5"/>
+    <property name="type" value="worm"/>
+   </properties>
+  </object>
+  <object name="rope" x="1080" y="240" width="8" height="8">
+   <properties>
+    <property name="priest" value="0"/>
+   </properties>
+  </object>
+  <object name="rope" x="1104" y="256" width="8" height="8">
+   <properties>
+    <property name="priest" value="1"/>
+   </properties>
+  </object>
+  <object name="rope" x="1208" y="248" width="8" height="8">
+   <properties>
+    <property name="priest" value="3"/>
+   </properties>
+  </object>
+  <object name="rope" x="1184" y="272" width="8" height="8">
+   <properties>
+    <property name="priest" value="2"/>
+   </properties>
+  </object>
+  <object name="movable" x="1072" y="248" width="16" height="24">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="37"/>
+    <property name="min" value="31"/>
+    <property name="priest" value="0"/>
+    <property name="rope" value="29"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="priest"/>
+   </properties>
+  </object>
+  <object name="movable" x="1096" y="264" width="16" height="24">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="38"/>
+    <property name="min" value="33"/>
+    <property name="priest" value="1"/>
+    <property name="rope" value="31"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="priest"/>
+   </properties>
+  </object>
+  <object name="movable" x="1176" y="280" width="16" height="24">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="38"/>
+    <property name="min" value="35"/>
+    <property name="priest" value="2"/>
+    <property name="rope" value="33"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="priest"/>
+   </properties>
+  </object>
+  <object name="movable" x="1200" y="256" width="16" height="24">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="37"/>
+    <property name="min" value="32"/>
+    <property name="priest" value="3"/>
+    <property name="rope" value="30"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="priest"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="1240" y="320" width="16" height="16">
+   <properties>
+    <property name="mode" value="1"/>
+    <property name="type" value="toggle"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="1072" y="208" width="16" height="16">
+   <properties>
+    <property name="mode" value="0"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="step" x="1224" y="312" width="8" height="8"/>
+  <object name="step" x="1216" y="296" width="8" height="8"/>
+  <object name="step" x="1232" y="248" width="8" height="8"/>
+  <object name="step" x="1160" y="232" width="56" height="8">
+   <properties>
+    <property name="width" value="48"/>
+   </properties>
+  </object>
+  <object name="step" x="1072" y="224" width="64" height="8">
+   <properties>
+    <property name="width" value="56"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room20" width="160" height="112">
+  <object name="actionitem" x="56" y="384" width="16" height="16">
+   <properties>
+    <property name="mode" value="0"/>
+    <property name="type" value="toggle"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="176" y="488" width="16" height="24">
+   <properties>
+    <property name="room" value="19"/>
+    <property name="type" value="teletransport"/>
+    <property name="x" value="150"/>
+    <property name="y" value="84"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="80" y="496" width="16" height="16">
+   <properties>
+    <property name="type" value="heart"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="208" y="384" width="16" height="16">
+   <properties>
+    <property name="mode" value="1"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="static" x="120" y="360" width="80" height="40">
+   <properties>
+    <property name="boundX2" value="85"/>
+    <property name="boundY2" value="40"/>
+    <property name="type" value="dragon"/>
+   </properties>
+  </object>
+  <object name="shooter" x="124" y="400" width="24" height="48">
+   <properties>
+    <property name="delay" value="1"/>
+    <property name="shooting" value="0.66"/>
+    <property name="type" value="flame"/>
+    <property name="waiting" value="1.15"/>
+   </properties>
+  </object>
+  <object name="step" x="32" y="416" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="4"/>
+   </properties>
+  </object>
+  <object name="step" x="16" y="480" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="40" y="464" width="8" height="8">
+   <properties>
+    <property name="side" value="right"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="48" y="520" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="128" y="520" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room21" width="160" height="112">
+  <object name="actionitem" x="272" y="384" width="16" height="16">
+   <properties>
+    <property name="type" value="heart"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="368" y="488" width="16" height="24">
+   <properties>
+    <property name="type" value="checkpoint"/>
+   </properties>
+  </object>
+  <object name="static" x="272" y="512" width="8" height="8">
+   <properties>
+    <property name="damage" value="0"/>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="296" y="512" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="ghost" x="368" y="424" width="16" height="16">
+   <properties>
+    <property name="speed" value="0.5"/>
+   </properties>
+  </object>
+  <object name="static" x="280" y="512" width="8" height="8">
+   <properties>
+    <property name="damage" value="0"/>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="288" y="512" width="8" height="8">
+   <properties>
+    <property name="damage" value="0"/>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="304" y="512" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="312" y="512" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="step" x="448" y="520" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+   </properties>
+  </object>
+  <object name="step" x="472" y="496" width="8" height="8">
+   <properties>
+    <property name="side" value="right"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room22" width="160" height="112">
+  <object name="actionitem" x="576" y="408" width="16" height="24">
+   <properties>
+    <property name="type" value="checkpoint"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="592" y="496" width="16" height="16">
+   <properties>
+    <property name="mode" value="2"/>
+    <property name="type" value="scroll"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="640" y="400" width="16" height="16">
+   <properties>
+    <property name="type" value="heart"/>
+   </properties>
+  </object>
+  <object name="movable" x="544" y="464" width="16" height="16">
+   <properties>
+    <property name="color" value="1"/>
+    <property name="dir" value="2"/>
+    <property name="max" value="62"/>
+    <property name="min" value="49"/>
+    <property name="speed" value="2"/>
+    <property name="type" value="fly"/>
+   </properties>
+  </object>
+  <object name="movable" x="560" y="376" width="16" height="16">
+   <properties>
+    <property name="color" value="0"/>
+    <property name="dir" value="2"/>
+    <property name="max" value="52"/>
+    <property name="min" value="45"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="fly"/>
+   </properties>
+  </object>
+  <object name="movable" x="640" y="480" width="16" height="16">
+   <properties>
+    <property name="color" value="0"/>
+    <property name="dir" value="2"/>
+    <property name="max" value="62"/>
+    <property name="min" value="58"/>
+    <property name="speed" value="0.75"/>
+    <property name="type" value="fly"/>
+   </properties>
+  </object>
+  <object name="movable" x="672" y="392" width="16" height="16">
+   <properties>
+    <property name="color" value="1"/>
+    <property name="dir" value="2"/>
+    <property name="max" value="62"/>
+    <property name="min" value="45"/>
+    <property name="speed" value="2"/>
+    <property name="type" value="fly"/>
+   </properties>
+  </object>
+  <object name="movable" x="688" y="480" width="16" height="16">
+   <properties>
+    <property name="color" value="1"/>
+    <property name="dir" value="2"/>
+    <property name="max" value="62"/>
+    <property name="min" value="45"/>
+    <property name="speed" value="1.5"/>
+    <property name="type" value="fly"/>
+   </properties>
+  </object>
+  <object name="step" x="528" y="464" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="536" y="448" width="8" height="8"/>
+  <object name="step" x="744" y="520" width="8" height="8">
+   <properties>
+    <property name="side" value="right"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room23" width="160" height="112">
+  <object name="movable" x="856" y="440" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="120"/>
+    <property name="min" value="106"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="skeleton"/>
+   </properties>
+  </object>
+  <object name="movable" x="896" y="488" width="16" height="24">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="114"/>
+    <property name="min" value="104"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="skeleton"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="914" y="496" width="16" height="16">
+   <properties>
+    <property name="mode" value="1"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="step" x="824" y="496" width="8" height="8"/>
+  <object name="step" x="816" y="480" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="824" y="464" width="8" height="8"/>
+  <object name="step" x="816" y="448" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="984" y="440" width="8" height="8"/>
+  <object name="step" x="976" y="416" width="8" height="8"/>
+  <object name="step" x="984" y="392" width="8" height="8">
+   <properties>
+    <property name="side" value="right"/>
+    <property name="width" value="4"/>
+   </properties>
+  </object>
+  <object name="step" x="976" y="368" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room24" width="160" height="112">
+  <object name="actionitem" x="1096" y="384" width="16" height="16">
+   <properties>
+    <property name="mode" value="1"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="1176" y="432" width="16" height="16">
+   <properties>
+    <property name="mode" value="3"/>
+    <property name="type" value="scroll"/>
+   </properties>
+  </object>
+  <object name="movable" x="1192" y="504" width="16" height="8">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="150"/>
+    <property name="min" value="134"/>
+    <property name="speed" value="0.5"/>
+    <property name="type" value="worm"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="1088" y="488" width="16" height="24">
+   <properties>
+    <property name="type" value="checkpoint"/>
+   </properties>
+  </object>
+  <object name="movable" x="1072" y="376" width="16" height="16">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="51"/>
+    <property name="min" value="45"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="spider"/>
+   </properties>
+  </object>
+  <object name="shooter" x="1136" y="464" width="16" height="16">
+   <properties>
+    <property name="delay" value="0"/>
+    <property name="type" value="plant"/>
+   </properties>
+  </object>
+  <object name="shooter" x="1160" y="384" width="16" height="16">
+   <properties>
+    <property name="delay" value="0.5"/>
+    <property name="type" value="plant"/>
+   </properties>
+  </object>
+  <object name="shooter" x="1248" y="400" width="16" height="16">
+   <properties>
+    <property name="delay" value="1"/>
+    <property name="type" value="plant"/>
+   </properties>
+  </object>
+  <object name="step" x="1216" y="520" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room30" width="160" height="112">
+  <object name="shooter" x="32" y="616" width="16" height="16">
+   <properties>
+    <property name="delay" value="1.6"/>
+    <property name="type" value="leak"/>
+   </properties>
+  </object>
+  <object name="shooter" x="88" y="560" width="16" height="16">
+   <properties>
+    <property name="delay" value="1.2"/>
+    <property name="type" value="leak"/>
+   </properties>
+  </object>
+  <object name="shooter" x="208" y="560" width="16" height="16">
+   <properties>
+    <property name="delay" value="0.5"/>
+    <property name="shootRate" value="2"/>
+    <property name="type" value="leak"/>
+   </properties>
+  </object>
+  <object name="shooter" x="192" y="560" width="16" height="16">
+   <properties>
+    <property name="delay" value="1.4"/>
+    <property name="type" value="leak"/>
+   </properties>
+  </object>
+  <object name="shooter" x="88" y="616" width="16" height="16">
+   <properties>
+    <property name="delay" value="0.7"/>
+    <property name="type" value="leak"/>
+   </properties>
+  </object>
+  <object name="movable" x="80" y="584" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="14"/>
+    <property name="min" value="10"/>
+    <property name="speed" value="0.5"/>
+    <property name="type" value="paladin"/>
+   </properties>
+  </object>
+  <object name="movable" x="192" y="664" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="24"/>
+    <property name="min" value="16"/>
+    <property name="speed" value="0.5"/>
+    <property name="type" value="paladin"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="168" y="584" width="16" height="24">
+   <properties>
+    <property name="type" value="checkpoint"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="224" y="592" width="16" height="16">
+   <properties>
+    <property name="mode" value="0"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="step" x="48" y="576" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="48" y="544" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="128" y="544" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="136" y="560" width="8" height="8"/>
+  <object name="step" x="144" y="576" width="8" height="8"/>
+  <object name="step" x="48" y="664" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="step" x="48" y="696" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="24" y="640" width="16" height="16">
+   <properties>
+    <property name="type" value="heart"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room31" width="160" height="112">
+  <object name="static" x="304" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="312" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="320" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="328" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="336" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="344" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="352" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="360" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="368" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="376" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="384" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="392" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="400" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="408" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="416" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="424" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="shooter" x="316" y="688" width="16" height="8">
+   <properties>
+    <property name="delay" value="0"/>
+    <property name="min" value="80"/>
+    <property name="type" value="flush"/>
+   </properties>
+  </object>
+  <object name="shooter" x="412" y="688" width="16" height="8">
+   <properties>
+    <property name="delay" value="0.5"/>
+    <property name="min" value="80"/>
+    <property name="type" value="flush"/>
+   </properties>
+  </object>
+  <object name="shooter" x="372" y="688" width="16" height="8">
+   <properties>
+    <property name="delay" value="1"/>
+    <property name="min" value="80"/>
+    <property name="type" value="flush"/>
+   </properties>
+  </object>
+  <object name="movable" x="400" y="552" width="16" height="16">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="73"/>
+    <property name="min" value="67"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="spider"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="272" y="576" width="16" height="16">
+   <properties>
+    <property name="mode" value="1"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="step" x="304" y="672" width="8" height="8">
+   <properties>
+    <property name="side" value="left"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="432" y="568" width="16" height="16">
+   <properties>
+    <property name="mode" value="4"/>
+    <property name="type" value="scroll"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room32" width="160" height="112">
+  <object name="shooter" x="632" y="632" width="16" height="24">
+   <properties>
+    <property name="type" value="archer"/>
+   </properties>
+  </object>
+  <object name="shooter" x="736" y="600" width="16" height="24">
+   <properties>
+    <property name="type" value="archer"/>
+   </properties>
+  </object>
+  <object name="shooter" x="528" y="552" width="16" height="24">
+   <properties>
+    <property name="type" value="archer"/>
+   </properties>
+  </object>
+  <object name="step" x="744" y="552" width="8" height="8">
+   <properties>
+    <property name="side" value="right"/>
+    <property name="width" value="7"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="632" y="552" width="16" height="16">
+   <properties>
+    <property name="type" value="switch"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="728" y="672" width="16" height="16">
+   <properties>
+    <property name="mode" value="1"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="536" y="608" width="16" height="16">
+   <properties>
+    <property name="mode" value="0"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="536" y="672" width="16" height="16">
+   <properties>
+    <property name="type" value="heart"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room33" width="160" height="112">
+  <object name="static" x="848" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="856" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="880" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="896" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="888" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="904" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="912" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="920" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="944" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="952" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="960" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="968" y="696" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="movable" x="784" y="536" width="32" height="32">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="122"/>
+    <property name="min" value="98"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="death"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="792" y="568" width="16" height="16">
+   <properties>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="888" y="616" width="16" height="16">
+   <properties>
+    <property name="type" value="heart"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room34" width="160" height="112">
+  <object name="actionitem" x="1192" y="648" width="16" height="24">
+   <properties>
+    <property name="room" value="10"/>
+    <property name="type" value="teletransport"/>
+    <property name="x" value="23"/>
+    <property name="y" value="64"/>
+   </properties>
+  </object>
+  <object name="door" x="1024" y="656" width="8" height="32">
+   <properties>
+    <property name="flag" value="TOGGLE01"/>
+    <property name="type" value="0"/>
+   </properties>
+  </object>
+  <object name="static" x="1136" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1144" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1152" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1160" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1168" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1176" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1184" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1192" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1200" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1208" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1216" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1224" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1232" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1240" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1248" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="static" x="1256" y="696" width="8" height="8">
+   <properties>
+    <property name="offset" value="4"/>
+    <property name="type" value="water"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="1088" y="616" width="16" height="24">
+   <properties>
+    <property name="type" value="checkpoint"/>
+   </properties>
+  </object>
+  <object name="shooter" x="1168" y="688" width="16" height="8">
+   <properties>
+    <property name="delay" value="0"/>
+    <property name="min" value="77"/>
+    <property name="type" value="flush"/>
+   </properties>
+  </object>
+  <object name="shooter" x="1216" y="688" width="16" height="8">
+   <properties>
+    <property name="delay" value="0.5"/>
+    <property name="min" value="77"/>
+    <property name="type" value="flush"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="1048" y="544" width="16" height="16">
+   <properties>
+    <property name="mode" value="1"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="shooter" x="1072" y="536" width="16" height="16">
+   <properties>
+    <property name="delay" value="0"/>
+    <property name="type" value="leak"/>
+   </properties>
+  </object>
+  <object name="shooter" x="1152" y="536" width="16" height="16">
+   <properties>
+    <property name="delay" value="0.5"/>
+    <property name="type" value="leak"/>
+   </properties>
+  </object>
+  <object name="movable" x="1112" y="576" width="16" height="16">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="76"/>
+    <property name="min" value="67"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="spider"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room40" width="160" height="112">
+  <object name="shooter" x="216" y="728" width="16" height="16">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="type" value="gargoyle"/>
+   </properties>
+  </object>
+  <object name="movable" x="32" y="792" width="24" height="16">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="26"/>
+    <property name="min" value="4"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="dark_bat"/>
+   </properties>
+  </object>
+  <object name="movable" x="136" y="840" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="18"/>
+    <property name="min" value="10"/>
+    <property name="speed" value="0.5"/>
+    <property name="type" value="paladin"/>
+   </properties>
+  </object>
+  <object name="door" x="248" y="816" width="8" height="32">
+   <properties>
+    <property name="flag" value="TOGGLE02"/>
+    <property name="type" value="1"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="192" y="752" width="16" height="16">
+   <properties>
+    <property name="mode" value="2"/>
+    <property name="type" value="toggle"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room41" width="160" height="112">
+  <object name="static" x="400" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="408" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="shooter" x="448" y="824" width="16" height="24">
+   <properties>
+    <property name="type" value="archer"/>
+   </properties>
+  </object>
+  <object name="movable" x="272" y="840" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="48"/>
+    <property name="min" value="34"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="demon"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="408" y="744" width="16" height="24">
+   <properties>
+    <property name="type" value="checkpoint"/>
+   </properties>
+  </object>
+  <object name="movable" x="344" y="744" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="44"/>
+    <property name="min" value="34"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="demon"/>
+   </properties>
+  </object>
+  <object name="movable" x="384" y="840" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="48"/>
+    <property name="min" value="34"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="demon"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="280" y="752" width="16" height="16">
+   <properties>
+    <property name="mode" value="5"/>
+    <property name="type" value="scroll"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room42" width="160" height="112">
+  <object name="static" x="592" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="608" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="656" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="672" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="600" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="616" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="664" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="680" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="704" y="856" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="static" x="712" y="856" width="8" height="8">
+   <properties>
+    <property name="type" value="spear"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="736" y="848" width="16" height="16">
+   <properties>
+    <property name="mode" value="0"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="shooter" x="736" y="808" width="16" height="16">
+   <properties>
+    <property name="type" value="gargoyle"/>
+   </properties>
+  </object>
+  <object name="movable" x="576" y="712" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="78"/>
+    <property name="min" value="66"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="skeleton_ceil"/>
+   </properties>
+  </object>
+  <object name="movable" x="592" y="840" width="16" height="16">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="112"/>
+    <property name="min" value="95"/>
+    <property name="speed" value="2"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="movable" x="656" y="768" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="83"/>
+    <property name="min" value="79"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="skeleton"/>
+   </properties>
+  </object>
+  <object name="movable" x="720" y="768" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="92"/>
+    <property name="min" value="88"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="demon"/>
+   </properties>
+  </object>
+  <object name="movable" x="608" y="856" width="16" height="16">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="112"/>
+    <property name="min" value="95"/>
+    <property name="speed" value="2"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="movable" x="664" y="800" width="16" height="16">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="112"/>
+    <property name="min" value="101"/>
+    <property name="speed" value="2"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room43" width="160" height="112">
+  <object name="static" x="936" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="928" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="944" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="960" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="784" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="800" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="816" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="848" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="864" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="880" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="0"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="952" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="968" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="792" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="808" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="824" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="856" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="872" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="static" x="888" y="872" width="8" height="8">
+   <properties>
+    <property name="offset" value="1"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="movable" x="944" y="712" width="16" height="24">
+   <properties>
+    <property name="dir" value="0"/>
+    <property name="max" value="124"/>
+    <property name="min" value="98"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="skeleton_ceil"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="904" y="840" width="16" height="24">
+   <properties>
+    <property name="type" value="checkpoint"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="832" y="848" width="16" height="16">
+   <properties>
+    <property name="type" value="heart"/>
+   </properties>
+  </object>
+  <object name="movable" x="816" y="720" width="16" height="16">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="112"/>
+    <property name="min" value="89"/>
+    <property name="speed" value="2"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="movable" x="860" y="736" width="24" height="16">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="123"/>
+    <property name="min" value="98"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="dark_bat"/>
+   </properties>
+  </object>
+  <object name="movable" x="972" y="808" width="24" height="16">
+   <properties>
+    <property name="dir" value="1"/>
+    <property name="max" value="123"/>
+    <property name="min" value="98"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="dark_bat"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="952" y="760" width="16" height="16">
+   <properties>
+    <property name="type" value="heart"/>
+   </properties>
+  </object>
+  <object name="movable" x="928" y="768" width="16" height="16">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="112"/>
+    <property name="min" value="89"/>
+    <property name="speed" value="2"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+  <object name="movable" x="848" y="784" width="16" height="16">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="112"/>
+    <property name="min" value="89"/>
+    <property name="speed" value="2"/>
+    <property name="type" value="lava"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="room44" width="160" height="112">
+  <properties>
+   <property name="title" value="Satan !!!"/>
+  </properties>
+  <object name="movable" x="1224" y="784" width="32" height="48">
+   <properties>
+    <property name="dir" value="3"/>
+    <property name="max" value="98"/>
+    <property name="min" value="89"/>
+    <property name="speed" value="1"/>
+    <property name="type" value="satan"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="1144" y="720" width="16" height="16">
+   <properties>
+    <property name="mode" value="0"/>
+    <property name="type" value="cup"/>
+   </properties>
+  </object>
+  <object name="block" x="1112" y="744" width="8" height="8">
+   <properties>
+    <property name="index" value="4"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1104" y="744" width="8" height="8">
+   <properties>
+    <property name="index" value="9"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1088" y="768" width="8" height="8">
+   <properties>
+    <property name="index" value="3"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1056" y="768" width="8" height="8">
+   <properties>
+    <property name="index" value="2"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1064" y="768" width="8" height="8">
+   <properties>
+    <property name="index" value="5"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1040" y="800" width="8" height="8">
+   <properties>
+    <property name="index" value="1"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1064" y="816" width="8" height="8">
+   <properties>
+    <property name="index" value="0"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1072" y="816" width="8" height="8">
+   <properties>
+    <property name="index" value="11"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1096" y="816" width="8" height="8">
+   <properties>
+    <property name="index" value="10"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1104" y="816" width="8" height="8">
+   <properties>
+    <property name="index" value="6"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1128" y="808" width="8" height="8">
+   <properties>
+    <property name="index" value="7"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="block" x="1144" y="832" width="8" height="8">
+   <properties>
+    <property name="index" value="8"/>
+    <property name="type" value="cross"/>
+   </properties>
+  </object>
+  <object name="actionitem" x="1248" y="816" width="16" height="16">
+   <properties>
+    <property name="mode" value="6"/>
+    <property name="type" value="scroll"/>
+    <property name="visible" value="false"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
