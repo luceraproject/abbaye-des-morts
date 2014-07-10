@@ -153,4 +153,6 @@ Abbaye.Menu.prototype.switchQuality = function()
 
 	this.background.loadTexture(Abbaye.texture_menu);
 	this.btnQuality.loadTexture(Abbaye.texture_game, 'quality_button');
+	
+	//document.getElementById().attributes();
 }

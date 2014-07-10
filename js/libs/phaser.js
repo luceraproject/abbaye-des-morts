@@ -50030,7 +50030,16 @@ Phaser.Physics.Arcade.prototype = {
 
         if (body.bounce.x === 0)
         {
-            body.velocity.x = 0;
+			if(this.TILEMAP_ALLOW_COLLISION_X)
+			{
+				if((this.gravity.x < 0 && body.velocity.x < 0) ||
+				   (this.gravity.x > 0 && body.velocity.x > 0))
+					body.velocity.x = 0;
+			}
+			else
+			{
+				body.velocity.x = 0;
+			}
         }
         else
         {
@@ -50062,8 +50071,16 @@ Phaser.Physics.Arcade.prototype = {
 
         if (body.bounce.y === 0)
         {
-            if(body.velocity.y > 0)
-                body.velocity.y = 0;
+			if(this.TILEMAP_ALLOW_COLLISION_Y)
+			{
+				if((this.gravity.y < 0 && body.velocity.y < 0) ||
+				   (this.gravity.y > 0 && body.velocity.y > 0))
+					body.velocity.y = 0;
+			}
+			else
+			{
+				body.velocity.y = 0;
+			}
         }
         else
         {

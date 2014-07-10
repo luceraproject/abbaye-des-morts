@@ -54,6 +54,7 @@ Abbaye.Game.prototype.create = function()
 	this.game.physics.startSystem(Phaser.Physics.ARCADE);
 	this.game.physics.arcade.TILE_BIAS = Abbaye.TILE_SIZE + 2;
 	this.game.physics.arcade.gravity.y = 400;
+	this.game.physics.arcade.TILEMAP_ALLOW_COLLISION_Y = true;
 	this.game.time.timeCap             = (1/60) * 1000;
 	this.game.time.advancedTiming      = true;
 	//this.game.time.timeCap = 0.001; //(1/40) * 1000;
