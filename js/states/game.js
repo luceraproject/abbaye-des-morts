@@ -653,6 +653,7 @@ Abbaye.Game.prototype.afterKillHero = function()
 {
 	if(this.hero.numHearts === 0)
 	{
+		this.stopAllMusic();
 		Abbaye.STATES.sequence.run(Abbaye.Sequence.GAME_OVER);
 	}
 	else
