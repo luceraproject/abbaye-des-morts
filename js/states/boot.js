@@ -43,8 +43,8 @@ Abbaye.Boot.prototype.preload = function()
 	this.game.stage.backgroundColor = "#000";
 
 	// Boot
-    this.game.load.image("preloadBackground", "assets/graphics/load.png");
-    this.game.load.image("preloadBar", "assets/graphics/loadBar.png");
+    this.game.load.image("preloadBackground", Abbaye.BASE_PATH + "assets/graphics/load.png");
+    this.game.load.image("preloadBar",        Abbaye.BASE_PATH + "assets/graphics/loadBar.png");
 };
 
 //-------------------------------------

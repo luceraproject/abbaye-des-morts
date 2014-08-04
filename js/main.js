@@ -25,7 +25,12 @@
 "use strict";
 //-------------------------------------
 
-var Abbaye = {};
+var Abbaye;
+
+if(!Abbaye)
+	Abbaye = {};
+
+Abbaye.BASE_PATH       = "";
 
 Abbaye.SCREEN_COLS     = 32;
 Abbaye.SCREEN_ROWS     = 22;
@@ -80,7 +85,7 @@ Abbaye.texture_tiles = 'tiles';
 window.onload = function() 
 {
 	var game = new Phaser.Game(Abbaye.SCREEN_WIDTH, Abbaye.FULL_HEIGHT, Phaser.CANVAS, 'abbaye', null, false, false);
-
+	
 	Abbaye.game = game;
 	Abbaye.STATES.boot      = new Abbaye.Boot(game);
 	Abbaye.STATES.loader    = new Abbaye.Loader(game);

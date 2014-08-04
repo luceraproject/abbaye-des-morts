@@ -197,10 +197,11 @@ Abbaye.Game.prototype.update = function()
 Abbaye.Game.prototype.render = function() 
 {
 	
-	this.game.debug.text( "FPS: " + this.game.time.fps + "\nFrames: " + this.game.time.frames, 10, 10);
 	
 	if(!this.debug)
 		return;
+	
+	this.game.debug.text( "FPS: " + this.game.time.fps + "\nFrames: " + this.game.time.frames, 10, 10);
 	
 	var myGame = this.game;
 	

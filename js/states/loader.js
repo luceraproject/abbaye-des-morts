@@ -53,38 +53,38 @@ Abbaye.Loader.prototype.preload = function()
     this.game.load.setPreloadSprite(this.preloadBar);
 
 	//--
-    this.game.load.atlas('abbaye_texture256', 'assets/graphics/tiles256.png', 'assets/graphics/abbaye.json');
-    this.game.load.image('tiles256',          'assets/graphics/tiles256.png');
-    this.game.load.image('menu256',           'assets/graphics/menu256.png');
+    this.game.load.atlas('abbaye_texture256', Abbaye.BASE_PATH + 'assets/graphics/tiles256.png', Abbaye.BASE_PATH + 'assets/graphics/abbaye.json');
+    this.game.load.image('tiles256',          Abbaye.BASE_PATH + 'assets/graphics/tiles256.png');
+    this.game.load.image('menu256',           Abbaye.BASE_PATH + 'assets/graphics/menu256.png');
 	
 	//--
-    this.game.load.atlas('abbaye_texture', 'assets/graphics/tiles.png', 'assets/graphics/abbaye.json');
-    this.game.load.image('tiles',          'assets/graphics/tiles.png');
-    this.game.load.image('menu',           'assets/graphics/menu.png');
+    this.game.load.atlas('abbaye_texture', Abbaye.BASE_PATH + 'assets/graphics/tiles.png', Abbaye.BASE_PATH + 'assets/graphics/abbaye.json');
+    this.game.load.image('tiles',          Abbaye.BASE_PATH + 'assets/graphics/tiles.png');
+    this.game.load.image('menu',           Abbaye.BASE_PATH + 'assets/graphics/menu.png');
 	
 	//--
-    this.game.load.tilemap('map',  'assets/map/map.json', null, Phaser.Tilemap.TILED_JSON);
-    this.game.load.image('scroll', 'assets/graphics/scroll.png');
-    this.game.load.image('blood',  'assets/graphics/chunk.png');
+    this.game.load.tilemap('map',  Abbaye.BASE_PATH + 'assets/map/map.json', null, Phaser.Tilemap.TILED_JSON);
+    this.game.load.image('scroll', Abbaye.BASE_PATH + 'assets/graphics/scroll.png');
+    this.game.load.image('blood',  Abbaye.BASE_PATH + 'assets/graphics/chunk.png');
 
-    this.game.load.audio(Abbaye.MUSIC_TITLE,      this.buildAudioArray('assets/music/' + Abbaye.MUSIC_TITLE));
-    this.game.load.audio(Abbaye.MUSIC_GAMEOVER,   this.buildAudioArray('assets/music/' + Abbaye.MUSIC_GAMEOVER));
-    this.game.load.audio(Abbaye.MUSIC_PRAYER,     this.buildAudioArray('assets/music/' + Abbaye.MUSIC_PRAYER));
-    this.game.load.audio(Abbaye.MUSIC_MANHUNT,    this.buildAudioArray('assets/music/' + Abbaye.MUSIC_MANHUNT));
-    this.game.load.audio(Abbaye.MUSIC_CHURCH,     this.buildAudioArray('assets/music/' + Abbaye.MUSIC_CHURCH));
-    this.game.load.audio(Abbaye.MUSIC_WOOD,       this.buildAudioArray('assets/music/' + Abbaye.MUSIC_WOOD));
-    this.game.load.audio(Abbaye.MUSIC_HANGMAN,    this.buildAudioArray('assets/music/' + Abbaye.MUSIC_HANGMAN));
-    this.game.load.audio(Abbaye.MUSIC_CAVES,      this.buildAudioArray('assets/music/' + Abbaye.MUSIC_CAVES));
-    this.game.load.audio(Abbaye.MUSIC_EVIL_FIGHT, this.buildAudioArray('assets/music/' + Abbaye.MUSIC_EVIL_FIGHT));
-    this.game.load.audio(Abbaye.MUSIC_HELL,       this.buildAudioArray('assets/music/' + Abbaye.MUSIC_HELL));
+    this.game.load.audio(Abbaye.MUSIC_TITLE,      this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_TITLE));
+    this.game.load.audio(Abbaye.MUSIC_GAMEOVER,   this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_GAMEOVER));
+    this.game.load.audio(Abbaye.MUSIC_PRAYER,     this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_PRAYER));
+    this.game.load.audio(Abbaye.MUSIC_MANHUNT,    this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_MANHUNT));
+    this.game.load.audio(Abbaye.MUSIC_CHURCH,     this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_CHURCH));
+    this.game.load.audio(Abbaye.MUSIC_WOOD,       this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_WOOD));
+    this.game.load.audio(Abbaye.MUSIC_HANGMAN,    this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_HANGMAN));
+    this.game.load.audio(Abbaye.MUSIC_CAVES,      this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_CAVES));
+    this.game.load.audio(Abbaye.MUSIC_EVIL_FIGHT, this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_EVIL_FIGHT));
+    this.game.load.audio(Abbaye.MUSIC_HELL,       this.buildAudioArray(Abbaye.BASE_PATH + 'assets/music/' + Abbaye.MUSIC_HELL));
     
-    this.game.load.audio(Abbaye.FX_DOOR,      this.buildAudioArray('assets/sounds/' + Abbaye.FX_DOOR));
-    this.game.load.audio(Abbaye.FX_ITEM,      this.buildAudioArray('assets/sounds/' + Abbaye.FX_ITEM));
-    this.game.load.audio(Abbaye.FX_JUMP,      this.buildAudioArray('assets/sounds/' + Abbaye.FX_JUMP));
-    this.game.load.audio(Abbaye.FX_MECHANISM, this.buildAudioArray('assets/sounds/' + Abbaye.FX_MECHANISM));
-    this.game.load.audio(Abbaye.FX_DEATH,     this.buildAudioArray('assets/sounds/' + Abbaye.FX_DEATH));
-    this.game.load.audio(Abbaye.FX_SHOOT,     this.buildAudioArray('assets/sounds/' + Abbaye.FX_SHOOT));
-    this.game.load.audio(Abbaye.FX_SLASH,     this.buildAudioArray('assets/sounds/' + Abbaye.FX_SLASH));
+    this.game.load.audio(Abbaye.FX_DOOR,      this.buildAudioArray(Abbaye.BASE_PATH + 'assets/sounds/' + Abbaye.FX_DOOR));
+    this.game.load.audio(Abbaye.FX_ITEM,      this.buildAudioArray(Abbaye.BASE_PATH + 'assets/sounds/' + Abbaye.FX_ITEM));
+    this.game.load.audio(Abbaye.FX_JUMP,      this.buildAudioArray(Abbaye.BASE_PATH + 'assets/sounds/' + Abbaye.FX_JUMP));
+    this.game.load.audio(Abbaye.FX_MECHANISM, this.buildAudioArray(Abbaye.BASE_PATH + 'assets/sounds/' + Abbaye.FX_MECHANISM));
+    this.game.load.audio(Abbaye.FX_DEATH,     this.buildAudioArray(Abbaye.BASE_PATH + 'assets/sounds/' + Abbaye.FX_DEATH));
+    this.game.load.audio(Abbaye.FX_SHOOT,     this.buildAudioArray(Abbaye.BASE_PATH + 'assets/sounds/' + Abbaye.FX_SHOOT));
+    this.game.load.audio(Abbaye.FX_SLASH,     this.buildAudioArray(Abbaye.BASE_PATH + 'assets/sounds/' + Abbaye.FX_SLASH));
 
     this.game.load.start();
 	this.ready = false;
