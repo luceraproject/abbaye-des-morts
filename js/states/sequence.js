@@ -204,7 +204,8 @@ Abbaye.Sequence.prototype.launch = function()
 	}
 	
 	this.music    = this.game.add.audio(musicId, 1, false);
-	this.music.play();
+	if(this.music)
+		this.music.play();
 };
 
 //-------------------------------------

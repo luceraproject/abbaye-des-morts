@@ -125,12 +125,32 @@ Abbaye.Loader.prototype.render = function()
 {
 };
 
+
+//-------------------------------------
+Abbaye.Loader.prototype.checkCanPlayAudio = function(name) 
+{
+	var ret = false;
+	var options = this.getAudioArray();
+	for(var item in options)
+	{
+		ret &= this.game.device.canPlayAudio(options[item]);
+	}
+	return ret;
+}
+
+//-------------------------------------
+Abbaye.Loader.prototype.getAudioArray = function(name) 
+{
+    //var options = ['wav', 'mp3', 'ogg'];
+    var options = ['wav'];
+	return options;
+}
+
 //-------------------------------------
 Abbaye.Loader.prototype.buildAudioArray = function(name) 
 {
     var ret = [];
-    //var options = ['wav', 'mp3', 'ogg'];
-    var options = ['wav'];
+    var options = this.getAudioArray();
     
     for(var opt in options)
     {
@@ -164,6 +184,9 @@ Abbaye.Loader.prototype.checkDecoded = function()
     ret &= this.cache.isSoundDecoded(Abbaye.FX_DEATH);
     ret &= this.cache.isSoundDecoded(Abbaye.FX_SHOOT);
     ret &= this.cache.isSoundDecoded(Abbaye.FX_SLASH);
+	
+	if(ret == false && !this.checkCanPlayAudio())
+		ret = true;
 	
 	return ret;
 };

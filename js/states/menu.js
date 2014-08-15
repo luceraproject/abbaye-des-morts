@@ -68,7 +68,8 @@ Abbaye.Menu.prototype.create = function()
 
 	
 	this.music    = this.game.add.audio(Abbaye.MUSIC_TITLE, 1, false);
-	this.music.play();
+	if(this.music)
+		this.music.play();
 	
     this.showInfo = false;
 
@@ -117,8 +118,11 @@ Abbaye.Menu.prototype.onSwitchInfo = function()
 	
 	if(this.showInfo === false)
 	{
-		this.music.stop();
-		this.music.play();
+		if(this.music)
+		{
+			this.music.stop();
+			this.music.play();
+		}
 	}
 };
 
