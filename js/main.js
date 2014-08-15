@@ -30,7 +30,11 @@ var Abbaye;
 if(!Abbaye)
 	Abbaye = {};
 
-Abbaye.BASE_PATH       = "";
+if(!Abbaye.BASE_PATH)
+{
+	var base_path = location.href.substr(0, location.href.lastIndexOf("/") + 1);
+	Abbaye.BASE_PATH   = base_path;
+}
 
 Abbaye.SCREEN_COLS     = 32;
 Abbaye.SCREEN_ROWS     = 22;
