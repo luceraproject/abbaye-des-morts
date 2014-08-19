@@ -141,8 +141,9 @@ Abbaye.Loader.prototype.checkCanPlayAudio = function(name)
 //-------------------------------------
 Abbaye.Loader.prototype.getAudioArray = function(name) 
 {
-    //var options = ['wav', 'mp3', 'ogg'];
-	var options = ['mp3', 'ogg'];
+    //var options = ['ogg', 'mp3', 'wav'];
+	//var options = ['wav'];
+	var options = ['ogg', 'mp3'];
 	return options;
 }
 
