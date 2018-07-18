@@ -61,7 +61,12 @@ Abbaye.Boot.prototype.create = function()
 	this.scale.minHeight = 192;
 	this.scale.maxWidth  = 1024;
 	this.scale.maxHeight = 768;
-	this.scale.setScreenSize(true);
+    
+    // Deprecated in Phaser 2.2
+	//this.scale.setScreenSize(true);  // Updates the size of the Game or the size/position of the Display canvas based on internal state.
+    // Alternatives
+    this.scale.refresh();
+    //this.scale.updateLayout();
 
 	if (!this.game.device.desktop)
 	{
