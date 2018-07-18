@@ -76,7 +76,7 @@ Abbaye.Jean = function(_game, _x, _y)
     this.emitter.bounce.setTo(0.5, 0.5);
         
     this._game.physics.enable(this, Phaser.Physics.ARCADE);
-    this.body.setSizeCustom(this.boundBoxStand.w, this.boundBoxStand.h, this.boundBoxStand.x, this.boundBoxStand.y);
+    this.body.setSize(this.boundBoxStand.w, this.boundBoxStand.h, this.boundBoxStand.x, this.boundBoxStand.y);
     this.body.collideWorldBounds = true;
     
     this.cursors = this._game.input.keyboard.createCursorKeys();
@@ -245,11 +245,11 @@ Abbaye.Jean.prototype.update = function ()
     {
         if(this.isCrawling)
         {
-            this.body.setSizeCustom(this.boundBoxCrawl.w, this.boundBoxCrawl.h, this.boundBoxCrawl.x, this.boundBoxCrawl.y);
+            this.body.setSize(this.boundBoxCrawl.w, this.boundBoxCrawl.h, this.boundBoxCrawl.x, this.boundBoxCrawl.y);
         }
         else
         {
-            this.body.setSizeCustom(this.boundBoxStand.w, this.boundBoxStand.h, this.boundBoxStand.x, this.boundBoxStand.y);
+            this.body.setSize(this.boundBoxStand.w, this.boundBoxStand.h, this.boundBoxStand.x, this.boundBoxStand.y);
         }
     }
 };

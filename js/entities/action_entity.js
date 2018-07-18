@@ -130,7 +130,7 @@ Abbaye.ActionEntity = function(_game, _x, _y, _w, _h, _properties)
     this.active       = true;
 
     Abbaye.STATES.game.physics.enable(this, Phaser.Physics.ARCADE);
-    this.body.setSize(this.boundBox.x2 - this.boundBox.x1, this.boundBox.y2 - this.boundBox.y1, this.boundBox.x1, this.boundBox.y1);
+    this.body.setSizeOriginal(this.boundBox.x2 - this.boundBox.x1, this.boundBox.y2 - this.boundBox.y1, this.boundBox.x1, this.boundBox.y1);
     this.body.immovable    = true;
     this.body.allowGravity = false;
 

@@ -37,11 +37,13 @@ for(var i=0; i<max; ++i)
 }
 
 if(Phaser.VersionInt >= 20408 && Phaser.VersionInt < 30000) {
-    Phaser.Physics.Arcade.Body.prototype.setSizeCustom = function (width, height, offsetX, offsetY) 
+    Phaser.Physics.Arcade.Body.prototype.setSizeOriginal = Phaser.Physics.Arcade.Body.prototype.setSize;
+    
+    Phaser.Physics.Arcade.Body.prototype.setSize = function (width, height, offsetX, offsetY) 
     {
         offsetX = this.sprite.anchor.x * (this.sprite.width  - width);
         offsetY = this.sprite.anchor.y * (this.sprite.height - height);
-        this.setSize(width, height, offsetX, offsetY);
+        this.setSizeOriginal(width, height, offsetX, offsetY);
     }
 }
 

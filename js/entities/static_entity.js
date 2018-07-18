@@ -30,7 +30,7 @@ Abbaye.StaticEntity = function(_game, _x, _y, _w, _h, _properties)
 {
 	Phaser.Sprite.call(this, _game, _x, _y, Abbaye.texture_game, 'empty');
 	_game.add.existing(this);
-    
+
     this._game = _game;
     this.properties  = _properties;
     this.boundBox    = {x1:0, x2:_w, y1:0, y2:_h};
@@ -89,7 +89,7 @@ Abbaye.StaticEntity = function(_game, _x, _y, _w, _h, _properties)
     }
     
     this._game.physics.enable(this, Phaser.Physics.ARCADE);
-    this.body.setSize(this.boundBox.x2 - this.boundBox.x1, this.boundBox.y2 - this.boundBox.y1, this.boundBox.x1, this.boundBox.y1);
+    this.body.setSizeOriginal(this.boundBox.x2 - this.boundBox.x1, this.boundBox.y2 - this.boundBox.y1, this.boundBox.x1, this.boundBox.y1);
     this.body.immovable    = true;
     this.body.allowGravity = false;
 

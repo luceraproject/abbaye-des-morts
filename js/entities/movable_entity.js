@@ -214,7 +214,7 @@ Abbaye.MovableEntity = function(_game, _x, _y, _w, _h, _properties)
     this.body.allowGravity = false;
     var offsetX = (this.boundBox.x1 + (this.boundBox.x2 - this.boundBox.x1)*0.5) - (_w * 0.5); 
     var offsetY = (this.boundBox.y1 + (this.boundBox.y2 - this.boundBox.y1)*0.5) - (_h * 0.5); 
-    this.body.setSizeCustom(this.boundBox.x2 - this.boundBox.x1, this.boundBox.y2 - this.boundBox.y1, offsetX, offsetY);
+    this.body.setSize(this.boundBox.x2 - this.boundBox.x1, this.boundBox.y2 - this.boundBox.y1, offsetX, offsetY);
     
     
 
@@ -470,7 +470,7 @@ Abbaye.MovableEntity.prototype.reset = function ()
         this.setFlipX(this.dir != Abbaye.MOVE_DOWN);
         this.body.velocity.y = (this.dir == Abbaye.MOVE_DOWN) ? this.speed : -this.speed;
     }
-    this.body.setSizeCustom(this.boundBox.x2 - this.boundBox.x1, this.boundBox.y2 - this.boundBox.y1, 0, 0);
+    this.body.setSize(this.boundBox.x2 - this.boundBox.x1, this.boundBox.y2 - this.boundBox.y1, 0, 0);
     
 };
 
