@@ -192,7 +192,7 @@ Abbaye.Shoot.prototype.reset = function (x, y, properties) {
     this.gravity     = 2;
     this.parentEntity = null;
 
-    this.scale.x     = 1;
+    this.setFlipX(true);
     this.anchor.setTo(0.5, 0.5);
     
     this.body.velocity.x  = 0;
@@ -224,7 +224,7 @@ Abbaye.Shoot.prototype.reset = function (x, y, properties) {
     else if(this.dir == Abbaye.MOVE_RIGHT)
     {
         this.body.velocity.x = this.speedX;
-        this.scale.x     = -1;
+        this.setFlipX(false);
     }
     else if(this.dir == Abbaye.MOVE_DOWN)
     {

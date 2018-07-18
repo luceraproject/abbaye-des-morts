@@ -74,7 +74,7 @@ Abbaye.Jean = function(_game, _x, _y)
     this.emitter.maxRotation = 0;
     this.emitter.gravity     = 150;
     this.emitter.bounce.setTo(0.5, 0.5);
-    
+        
     this._game.physics.enable(this, Phaser.Physics.ARCADE);
     this.body.setSizeCustom(this.boundBoxStand.w, this.boundBoxStand.h, this.boundBoxStand.x, this.boundBoxStand.y);
     this.body.collideWorldBounds = true;
@@ -151,7 +151,7 @@ Abbaye.Jean.prototype.update = function ()
 			var elapsed = currentTime.getTime() - this.timestamp.getTime();
 			if(elapsed > 1200)
 			{
-				this.scale.x = -this.scale.x;
+                this.toggleFlipX();
 				this.timestamp = new Date();
 			}
 		}
@@ -176,13 +176,13 @@ Abbaye.Jean.prototype.update = function ()
 
         if(leftIsPressed)
         {
-            this.scale.x = 1;
+            this.setFlipX(true);
             if(this.body.blocked.left === false)
                 this.body.velocity.x  = -inc;
         }
         if(rightIsPressed)
         {
-            this.scale.x = -1;
+            this.setFlipX(false);
             if(this.body.blocked.right === false)
                 this.body.velocity.x  = inc;
         }

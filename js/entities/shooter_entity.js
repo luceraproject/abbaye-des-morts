@@ -210,7 +210,7 @@ Abbaye.ShooterEntity.prototype.update = function ()
     if(this.type == Abbaye.ShooterEntity.ARCHER)
     {
         var hero = Abbaye.STATES.game.hero;
-        this.scale.x = (this.x < hero.x) ? -1 : 1;
+        this.setFlipX(this.x >= hero.x);
     }
 
     var timestamp = this.stateTime + this._game.time.elapsed / 1000;

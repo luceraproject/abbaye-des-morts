@@ -136,7 +136,7 @@ Abbaye.Ghost.prototype.update = function ()
     this.body.velocity.x = speedX;
     this.body.velocity.y = speedY;
     
-    this.scale.x = (speedX>=0)?-1:1;
+    this.setFlipX(speedX < 0);
 };
 
 //-------------------------------------

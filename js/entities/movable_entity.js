@@ -317,14 +317,14 @@ Abbaye.MovableEntity.prototype.update = function ()
     {
         if(this.x - 1 > this.limitMax && this.dir == Abbaye.MOVE_RIGHT) 
         {
-            this.dir     = Abbaye.MOVE_LEFT;
-            this.scale.x = 1;
+            this.dir = Abbaye.MOVE_LEFT;
+            this.setFlipX(true);
             this.body.velocity.x = -this.speed;
         }
         else if(this.x + 1 < this.limitMin && this.dir == Abbaye.MOVE_LEFT)
         {
-            this.dir     = Abbaye.MOVE_RIGHT;
-            this.scale.x = -1;
+            this.dir = Abbaye.MOVE_RIGHT;
+            this.setFlipX(false);
             this.body.velocity.x = this.speed;
         }
     }
@@ -332,14 +332,14 @@ Abbaye.MovableEntity.prototype.update = function ()
     {
         if(this.y - 1 > this.limitMax && this.dir == Abbaye.MOVE_DOWN) 
         {
-            this.dir        = Abbaye.MOVE_UP;
-            this.scale.x = 1;
+            this.dir = Abbaye.MOVE_UP;
+            this.setFlipX(true);
             this.body.velocity.y = -this.speed;
         }
         else if(this.y + 1 < this.limitMin && this.dir == Abbaye.MOVE_UP)
         {
-            this.dir        = Abbaye.MOVE_DOWN;
-            this.scale.x = -1;
+            this.dir = Abbaye.MOVE_DOWN;
+            this.setFlipX(false);
             this.body.velocity.y = this.speed;
         }
     }
@@ -362,7 +362,7 @@ Abbaye.MovableEntity.prototype.update = function ()
         else if(this.x > 48)
         {
             this.shootTime = 0;
-			Abbaye.STATES.game.addShoot(this.x, this.y + 14, {dir: ((this.scale.x != 1) ? Abbaye.MOVE_RIGHT : Abbaye.MOVE_LEFT), speedX: 1, speedY: 1.5, type: Abbaye.Shoot.AXE});
+			Abbaye.STATES.game.addShoot(this.x, this.y + 14, {dir: ((this.scale.x < 0) ? Abbaye.MOVE_RIGHT : Abbaye.MOVE_LEFT), speedX: 1, speedY: 1.5, type: Abbaye.Shoot.AXE});
             Abbaye.STATES.game.playFX(Abbaye.FX_SHOOT);
         }
     }
@@ -371,7 +371,7 @@ Abbaye.MovableEntity.prototype.update = function ()
 		if(this.isBlocked)
 			return;
 		
-        this.scale.x = 1;
+        this.setFlipX(true);
         timestamp = this.shootTime + this._game.time.elapsed / 1000;
         if(timestamp < this.shootDelay)
         {
@@ -462,12 +462,12 @@ Abbaye.MovableEntity.prototype.reset = function ()
     this.body.blocked.down = false;
     if(this.origDir == Abbaye.MOVE_LEFT || this.origDir == Abbaye.MOVE_RIGHT)
     {
-        this.scale.x = (this.dir == Abbaye.MOVE_RIGHT)?-1:1;
+        this.setFlipX(this.dir != Abbaye.MOVE_RIGHT);
         this.body.velocity.x = (this.dir == Abbaye.MOVE_RIGHT) ? this.speed : -this.speed;
     }
     else if(this.origDir == Abbaye.MOVE_DOWN || this.origDir == Abbaye.MOVE_UP)
     {
-        this.scale.x = (this.dir == Abbaye.MOVE_DOWN)?-1:1;
+        this.setFlipX(this.dir != Abbaye.MOVE_DOWN);
         this.body.velocity.y = (this.dir == Abbaye.MOVE_DOWN) ? this.speed : -this.speed;
     }
     this.body.setSizeCustom(this.boundBox.x2 - this.boundBox.x1, this.boundBox.y2 - this.boundBox.y1, 0, 0);

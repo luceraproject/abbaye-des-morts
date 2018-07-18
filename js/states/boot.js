@@ -45,6 +45,34 @@ if(Phaser.VersionInt >= 20408 && Phaser.VersionInt < 30000) {
     }
 }
 
+if(Phaser.VersionInt < 30000) {
+
+    Phaser.Sprite.prototype.setFlipX = function(value) 
+    {
+        if(value)
+        {
+            this.scale.x = Math.abs(this.scale.x);
+        }
+        else 
+        {
+            this.scale.x = -Math.abs(this.scale.x);
+        }
+        
+        if(Phaser.VersionInt >= 20408)
+        {
+            if(this.body) 
+            {
+                this.body.setSize(this.body.width, this.body.height, 0, 0);
+            }
+        }
+    }
+    
+    Phaser.Sprite.prototype.toggleFlipX = function()
+    {
+        this.setFlipX(this.scale.x >= 0);
+    }
+}
+
 Phaser.Physics.Arcade.prototype.processTileSeparationY = function(body, y) 
 {
 
