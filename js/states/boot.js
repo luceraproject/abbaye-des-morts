@@ -45,6 +45,33 @@ if(Phaser.VersionInt >= 20408 && Phaser.VersionInt < 30000) {
     }
 }
 
+Phaser.Physics.Arcade.prototype.processTileSeparationY = function(body, y) 
+{
+
+    if (y < 0)
+    {
+        body.blocked.up = true;
+    }
+    else if (y > 0)
+    {
+        body.blocked.down = true;
+    }
+
+    body.position.y -= y;
+
+    if (body.bounce.y === 0)
+    {
+        if((this.gravity.y < 0 && body.velocity.y < 0) || (this.gravity.y > 0 && body.velocity.y > 0))
+        {
+            body.velocity.y = 0;
+        }
+    }
+    else
+    {
+        body.velocity.y = -body.velocity.y * body.bounce.y;
+    }
+}
+
 //-------------------------------------
 Abbaye.Boot = function(_game) 
 {
