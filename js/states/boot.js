@@ -28,7 +28,7 @@
 
 Phaser.VersionInt = 0;
 var aux = Phaser.VERSION.split(".");
-var max = Math.max(aux.length, 3);
+var max = Math.min(aux.length, 3);
 var mult = 10000;
 for(var i=0; i<max; ++i) 
 {
