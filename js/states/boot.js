@@ -26,6 +26,25 @@
 "use strict";
 //-------------------------------------
 
+Phaser.VersionInt = 0;
+var aux = Phaser.VERSION.split(".");
+var max = Math.max(aux.length, 3);
+var mult = 10000;
+for(var i=0; i<max; ++i) 
+{
+    Phaser.VersionInt += aux[i] * mult;
+    mult /= 100;
+}
+
+if(Phaser.VersionInt >= 20408 && Phaser.VersionInt < 30000) {
+    Phaser.Physics.Arcade.Body.prototype.setSizeCustom = function (width, height, offsetX, offsetY) 
+    {
+        offsetX = this.sprite.anchor.x * (this.sprite.width  - width);
+        offsetY = this.sprite.anchor.y * (this.sprite.height - height);
+        this.setSize(width, height, offsetX, offsetY);
+    }
+}
+
 //-------------------------------------
 Abbaye.Boot = function(_game) 
 {
