@@ -38,7 +38,8 @@ for(var i=0; i<max; ++i)
 
 Phaser.Physics.Arcade.Body.prototype.setSizeOriginal = Phaser.Physics.Arcade.Body.prototype.setSize;
 
-if(Phaser.VersionInt == 20408) {
+if(Phaser.VersionInt == 20408) 
+{
     Phaser.Physics.Arcade.Body.prototype.setSize = function (width, height, offsetX, offsetY) 
     {
         offsetX = this.sprite.anchor.x * (this.sprite.width  - width);
@@ -46,7 +47,8 @@ if(Phaser.VersionInt == 20408) {
         this.setSizeOriginal(width, height, offsetX, offsetY);
     }
 }
-else if(Phaser.VersionInt >= 20409) {
+else if(Phaser.VersionInt >= 20409) 
+{
     Phaser.Physics.Arcade.Body.prototype.setSize = function (width, height, offsetX, offsetY) 
     {
         offsetX = this.sprite.anchor.x * (Math.abs(this.sprite.width)  - width);
@@ -55,8 +57,8 @@ else if(Phaser.VersionInt >= 20409) {
     }
 }
 
-if(Phaser.VersionInt < 30000) {
-
+if(Phaser.VersionInt < 30000) 
+{
     Phaser.Sprite.prototype.setFlipX = function(value) 
     {
         if(value)
@@ -81,32 +83,32 @@ if(Phaser.VersionInt < 30000) {
     {
         this.setFlipX(this.scale.x >= 0);
     }
-}
 
-Phaser.Physics.Arcade.prototype.processTileSeparationY = function(body, y) 
-{
-
-    if (y < 0)
+    Phaser.Physics.Arcade.prototype.processTileSeparationY = function(body, y) 
     {
-        body.blocked.up = true;
-    }
-    else if (y > 0)
-    {
-        body.blocked.down = true;
-    }
 
-    body.position.y -= y;
-
-    if (body.bounce.y === 0)
-    {
-        if((this.gravity.y < 0 && body.velocity.y < 0) || (this.gravity.y > 0 && body.velocity.y > 0))
+        if (y < 0)
         {
-            body.velocity.y = 0;
+            body.blocked.up = true;
         }
-    }
-    else
-    {
-        body.velocity.y = -body.velocity.y * body.bounce.y;
+        else if (y > 0)
+        {
+            body.blocked.down = true;
+        }
+
+        body.position.y -= y;
+
+        if (body.bounce.y === 0)
+        {
+            if((this.gravity.y < 0 && body.velocity.y < 0) || (this.gravity.y > 0 && body.velocity.y > 0))
+            {
+                body.velocity.y = 0;
+            }
+        }
+        else
+        {
+            body.velocity.y = -body.velocity.y * body.bounce.y;
+        }
     }
 }
 
